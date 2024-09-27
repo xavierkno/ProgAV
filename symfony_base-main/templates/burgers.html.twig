@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+{% block title %}Noa aime les burgouz!{% endblock %}
+{% block body %}
+    {% for burger in burgers %}
+    <h5 class="card-title"><a href="/burgers/{{ burger.id }}">{{ burger.name }}</a></h5>
+    {% endfor %} 
+{% endblock %}
